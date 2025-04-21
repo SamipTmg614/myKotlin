@@ -7,7 +7,7 @@ fun main() {
 
 //how is variable declared and initialized
 
-    var age = 19 //initialization
+    var age4 = 19 //initialization
 
 //types of variables
 //:mutable varibles and immnutable variables
@@ -15,9 +15,9 @@ fun main() {
 //mutable variables:
 
 //we can re assign values to mutable variables
-    var age = 20;
+    var age7 = 20;
 
-    age = 26
+    age7 = 26
 
 //        immutable variables
 //we cannot re assign values to immutable variables
@@ -33,7 +33,7 @@ fun main() {
 //    :array , char , int , float , string,double , short etc
 
 //    how is data type declared
-    var age : int = 20
+    var age8 : Int = 20
 
 //    here var declares mutable variable age is the name for variable int makes integer and 20 ius the value
 

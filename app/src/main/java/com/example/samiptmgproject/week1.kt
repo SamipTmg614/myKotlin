@@ -48,8 +48,9 @@ fun main(){
         print(i)
     }
 
-
-    fun calculate(a : Int, b : Int) : String{ //return type unit and void is same
-    }
+//
+//    fun calculate(a : Int, b : Int) : String{ //return type unit and void is same
+//
+//    }
 
 }
