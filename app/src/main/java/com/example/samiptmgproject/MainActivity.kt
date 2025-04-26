@@ -44,8 +44,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Scaffold{ innerPadding ->
+            Scaffold { innerPadding ->
                 ProfileBody(innerPadding)
+            }
         }
     }
 }
@@ -172,4 +173,3 @@ fun ProfileBody(innerPadding : PaddingValues) {
     fun PreviewProfile(){
         ProfileBody(innerPadding = PaddingValues(0.dp))
     }
-}
