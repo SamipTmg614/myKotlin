@@ -48,7 +48,7 @@ class MainActivity2 : ComponentActivity() {
 @Composable
 fun homeBody(innerPadding : PaddingValues){
     Column(
-        modifier = Modifier.padding(innerPadding).background(color = Color(red = 0, green = 255, blue = 255)  ).fillMaxSize().fillMaxHeight()
+        modifier = Modifier.padding(innerPadding).background(color = Color(red = 51, green = 255, blue = 153)  ).fillMaxSize().fillMaxHeight()
     ) {
         Row(
             modifier = Modifier.fillMaxWidth().height(80.dp).padding(top = 20.dp, end = 20.dp),
@@ -63,7 +63,7 @@ fun homeBody(innerPadding : PaddingValues){
         }
         Column {
             Row(modifier = Modifier.height(50.dp).padding(start = 30.dp)) {
-                Text(text = "CARD", textDecoration = null, style = TextStyle(color = Color.White, fontSize = 40.sp),
+                Text(text = "Card", textDecoration = null, style = TextStyle(color = Color.White, fontSize = 40.sp),
                     fontWeight = FontWeight.Bold)
             }
             Row(modifier = Modifier.height(20.dp).padding(start = 30.dp)) {
@@ -75,7 +75,7 @@ fun homeBody(innerPadding : PaddingValues){
         Column (modifier = Modifier.padding(top = 20.dp).height(500.dp)){
             Row (modifier = Modifier.padding(10.dp),
                 horizontalArrangement = Arrangement.spacedBy(10.dp)){
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp).width(150.dp)
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -85,20 +85,17 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
-                    Image(
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
+                        Image(
                         painter = painterResource(R.drawable.book), modifier = Modifier.height(60.dp),
                         contentDescription = null,
-
                     )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
                         Text(text = "Book")
                     }
                 }
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp).width(150.dp).fillMaxHeight()
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -108,25 +105,21 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
                         Image(
                             painter = painterResource(R.drawable.home), modifier = Modifier.height(60.dp),
                             contentDescription = null,
-
-                            )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
-                        Text(text = "Address")
+                        )
+                        Text(text = "address")
                     }
                 }
             }
 
             Row (modifier = Modifier.padding(10.dp),
                 horizontalArrangement = Arrangement.spacedBy(10.dp)){
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp)
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -136,20 +129,19 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
+
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
                         Image(
                             painter = painterResource(R.drawable.man), modifier = Modifier.height(60.dp),
                             contentDescription = null,
-
-                            )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
+                        )
                         Text(text = "Character")
                     }
+
                 }
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp)
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -159,24 +151,20 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
                         Image(
                             painter = painterResource(R.drawable.key), modifier = Modifier.height(60.dp),
                             contentDescription = null,
-
-                            )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
+                        )
                         Text(text = "Password")
                     }
                 }
             }
             Row (modifier = Modifier.padding(10.dp),
                 horizontalArrangement = Arrangement.spacedBy(10.dp)){
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp)
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -186,20 +174,17 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
                         Image(
                             painter = painterResource(R.drawable.boxinhand), modifier = Modifier.height(60.dp),
                             contentDescription = null,
-
-                            )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
+                        )
                         Text(text = "Logistics")
                     }
                 }
-                Card(modifier = Modifier.height(100.dp)
+                Card(modifier = Modifier.height(150.dp)
                     .weight(1f),
                     shape = RoundedCornerShape(10.dp),
                     elevation = CardDefaults.cardElevation(
@@ -209,17 +194,13 @@ fun homeBody(innerPadding : PaddingValues){
                         containerColor = Color(red = 224, green = 224,blue = 224)
                     )
                 ) {
-
-                    Row(horizontalArrangement = Arrangement.Center,
-                        modifier = Modifier.fillMaxWidth().padding(top = 15.dp)) {
+                    Column (modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally){
                         Image(
-                            painter = painterResource(R.drawable.home), modifier = Modifier.height(60.dp),
+                            painter = painterResource(R.drawable.card), modifier = Modifier.height(60.dp),
                             contentDescription = null,
-
-                            )
-                    }
-                    Row (modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.Center){
+                        )
                         Text(text = "Bank Card")
                     }
                 }
@@ -239,11 +220,12 @@ fun homeBody(innerPadding : PaddingValues){
             )
             ){
                 Row(verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center)
+                    horizontalArrangement = Arrangement.Center,
+                    modifier = Modifier.fillMaxWidth().fillMaxHeight())
                      {
                     Image(
                         painter = painterResource(R.drawable.setting),contentDescription = null,
-                        modifier = Modifier.padding(start = 10.dp))
+                        modifier = Modifier.padding(start = 10.dp, end = 10.dp).height(55.dp))
 
                     Text(text = "Settings", fontSize = 50.sp,
                         )
